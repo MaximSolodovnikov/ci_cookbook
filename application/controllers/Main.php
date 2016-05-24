@@ -10,4 +10,12 @@ class Main extends CI_Controller {
         $name = 'main';
         $this->template->page_view($name, $data);
     }
+    
+    public function add_recipe() {
+        
+        $data['user'] = $this->session->userdata('email');
+        
+        $name = 'recipe';
+        $this->template->page_view($name, $data);
+    }
 }

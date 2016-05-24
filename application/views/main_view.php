@@ -11,7 +11,7 @@
                             </form>
                         </div>
                         <div class="col-lg-4">
-                            <a class="btn btn-default" href="#" role="button">Добавить рецепт</a>
+                            <a class="btn btn-default" href="<?= base_url(); ?>index.php/main/add_recipe" role="button">Добавить рецепт</a>
                         </div>
                     </div><br>
                     <div class="row">

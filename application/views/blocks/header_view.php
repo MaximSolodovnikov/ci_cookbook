@@ -8,7 +8,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a href="#"><img class="img-responsive" src="<?= base_url(); ?>images/logo.png" alt="logosite"></a>
+                <a href="<?= base_url(); ?>"><img class="img-responsive" src="<?= base_url(); ?>images/logo.png" alt="logosite"></a>
             </div>
 
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
