@@ -17,11 +17,4 @@ class Pages_model extends CI_Model {
             return FALSE;
         }
     }
-    
-    function user_info($email) {
-        
-        $this->db->where('email', $email);
-        $query = $this->db->get('users');
-        return $query->row_array();
-    }
 }

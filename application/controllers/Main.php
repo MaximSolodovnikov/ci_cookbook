@@ -7,8 +7,6 @@ class Main extends CI_Controller {
     {
         $data['user'] = $this->session->userdata('email');
         
-        echo 'Ololo' . $data['user'];
-        
         $name = 'main';
         $this->template->page_view($name, $data);
     }

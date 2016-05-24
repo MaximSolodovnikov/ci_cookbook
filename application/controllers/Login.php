@@ -21,10 +21,9 @@ class Login extends CI_Controller {
                 
                 if ($autorization) {
                     
-                    $data['user'] = $this->pages_model->user_info($email);
                     $ses_data = array(
                         
-                        'user' => $email
+                        'email' => $email
                     );
                 
                     $this->session->set_userdata($ses_data);
