@@ -11,7 +11,9 @@
                             </form>
                         </div>
                         <div class="col-lg-4">
-                            <a class="btn btn-default" href="<?= base_url(); ?>index.php/main/add_recipe" role="button">Добавить рецепт</a>
+                            <?php if ($user): ?>
+                                <a class="btn btn-default" href="<?= base_url(); ?>index.php/main/add_recipe" role="button">Добавить рецепт</a>
+                            <?php endif; ?>
                         </div>
                     </div><br>
                     <div class="row">
