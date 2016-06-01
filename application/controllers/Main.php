@@ -23,23 +23,30 @@ class Main extends CI_Controller {
             $add['description'] = $this->input->post('description');
             
             $ingredients = $this->input->post('ingredients');
-            /*$quantity = $this->input->post('quantity');*/
-           
-            
+            $quantity = $this->input->post('quantity');
+                        
             $recipe_id = $this->pages_model->add_recipe($add);
             
-            foreach ($ingredients as $ingredient) {
+            
+            foreach ($ingredients as $i) {
+                
+                foreach ($quantity as $q) {
                     
-                    $ingredients_insert = array(
+                    $ingredients_insert = array (
                         
-                        'ingredients' => $ingredient,
-                        'recipe_id' => $recipe_id
+                            'ingredients' => $i,
+                            'quantity' => $q,
+                            'recipe_id' => $recipe_id
+
                     );
                     
-                    $this->pages_model->add_ingredients($ingredients_insert);
                 }
+            $this->pages_model->add_ingredients($ingredients_insert);    
                 
-                redirect(base_url());
+            }
+    
+            redirect(base_url());
+            
         } else {
             
             $name = 'recipe';

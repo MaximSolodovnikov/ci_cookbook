@@ -17,20 +17,6 @@ class Rules_model extends CI_Model {
                 'field' => 'description',
                 'label' => 'Описание рецепта',
                 'rules' => 'required'
-            )/*,
-        
-        array
-            (
-                'field' => 'ingredients[]',
-                'label' => 'Ингридиенты',
-                'rules' => 'required'
-            ),
-        
-        array
-            (
-                'field' => 'quantity[]',
-                'label' => 'Количество',
-                'rules' => 'required'
-            )*/
-    );
+            )
+        );
 }

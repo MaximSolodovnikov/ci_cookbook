@@ -15,7 +15,7 @@
                                 <div class="form-group">
                                     <label for="textArea" class="col-lg-2 control-label">Описание</label>
                                     <div class="col-lg-10">
-                                        <div class="text-danger""><?= form_error('description'); ?></div>
+                                        <div class="text-danger"><?= form_error('description'); ?></div>
                                         <textarea class="form-control" rows="3" id="textArea" placeholder="Описание рецепта" name="description"><?= set_value('description')?></textarea>
                                     </div>
                                 </div>
@@ -53,7 +53,8 @@
             // Создаем новый div-элемент
             var new_input=document.createElement('div');
             // Тут мы уже можем воспользоваться innerHTML потому, что изменения не коснуться всего остального докуметна
-            new_input.innerHTML='<br><label>Ингредиент</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<label>Количество</label><br><input name="ingredients[]">&nbsp;<input name="quantity[]">';
+            new_input.innerHTML='<br><label>Ингредиент</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\n\
+                                     <label>Количество</label><br><input type="text" name="ingredients[]">&nbsp;<input type="text" name="quantity[]">';
             // Добавляем только что созданный div на страницу
             document.getElementById('inputi').appendChild(new_input);
         }

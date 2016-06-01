@@ -41,7 +41,7 @@
         <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus name="email">
         <label for="inputPassword" class="sr-only">Password</label>
         <input type="password" id="inputPassword" class="form-control" placeholder="Password" required name="pswd">
-        <input class="btn btn-lg btn-primary btn-block" type="submit" name="enter">
+        <input class="btn btn-lg btn-primary btn-block" value="Вход" type="submit" name="enter">
       </form>
 
     </div> <!-- /container -->
